@@ -13,27 +13,31 @@ const Footer = () => {
                     <Image src="/logo.png" alt="DAILYCART.COM" width={210} height={35} />
                 </a>
                 </Link>
-                <p className="mt-2 text-sm text-gray-500 px-4">Air plant banjo lyft occupy retro adaptogen indego</p>
+                <p className="mt-2 text-sm text-gray-500 px-4">Welcome to Our store.</p>
+                <p className="mt-2 text-sm text-gray-500 px-4">Your Fashion, Our Priority</p>
                 </div>
                 <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                 <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                     <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                     <nav className="list-none mb-10">
                     <li>
-                        <a className="text-gray-600 hover:text-gray-800">First Link</a>
+                        <a className="text-gray-600 hover:text-gray-800">Tshirts</a>
                     </li>
                     <li>
-                        <a className="text-gray-600 hover:text-gray-800">Second Link</a>
+                        <a className="text-gray-600 hover:text-gray-800">Pants</a>
                     </li>
                     <li>
-                        <a className="text-gray-600 hover:text-gray-800">Third Link</a>
+                        <a className="text-gray-600 hover:text-gray-800">Shoes</a>
                     </li>
                     <li>
-                        <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        <a className="text-gray-600 hover:text-gray-800">Mugs</a>
+                    </li>
+                    <li>
+                        <a className="text-gray-600 hover:text-gray-800">Hoodies</a>
                     </li>
                     </nav>
                 </div>
-                <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                     <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                     <nav className="list-none mb-10">
                     <li>
@@ -83,12 +87,12 @@ const Footer = () => {
                         <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
                     </li>
                     </nav>
-                </div>
+                </div> */}
                 </div>
             </div>
             <div className="bg-gray-100">
                 <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p className="text-gray-500 text-sm text-center sm:text-left">© 2020 DailyCart.com — All Rights Reserved
+                <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 DailyCart.com — All Rights Reserved
     
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

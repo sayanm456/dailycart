@@ -24,11 +24,12 @@ export default function Home() {
               Welcome to DailyCart.com
             </h1>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table.
+              {/* Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+              gentrify, subway tile poke farm-to-table. */}
+              A e-commerce store for fullfill not only your daily, also fulfilling your daily fashion style & statement, whatever you want!   
             </p>
           </div>
-          <div className="flex flex-wrap -m-4">
+          {/* <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-violet-100 text-violet-500 mb-4">
@@ -128,7 +129,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

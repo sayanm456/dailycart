@@ -4,6 +4,7 @@ import mongoose from 'mongoose'
 import Product from '../../models/Product'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Image from 'next/image'
 
 const Post = ({addToCart,byeNow, product, varients}) => {
   console.log(product, varients)
@@ -51,7 +52,7 @@ const Post = ({addToCart,byeNow, product, varients}) => {
   const refreshVarients = (newsize, newcolor)=>{
       let url = `${process.env.NEXT_PUBLIC_HOST}/product/${varients[newcolor][newsize]['slug']}`
       window.location = url;
-     
+      router.push(url)
   }
 
   
@@ -71,7 +72,7 @@ const Post = ({addToCart,byeNow, product, varients}) => {
           />
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
-          <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto px-16 object-cover object-top rounded" src={product.img}/>
+          <Image alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto px-16 object-cover object-top rounded" src={product.img}/>
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">DAILYCART SPECIAL</h2>
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{product.title} ({product.size}/{product.color})</h1>
