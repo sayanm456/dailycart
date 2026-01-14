@@ -7,7 +7,7 @@ const handler = async (req, res)=>{
         console.log(req.body)
         for(let i=0; i<req.body.length; i++){
             
-        let p = new Product({
+        let prod = new Product({
             title: req.body[i].title,
             slug: req.body[i].slug,
             desc: req.body[i].desc,
@@ -18,7 +18,7 @@ const handler = async (req, res)=>{
             price: req.body[i].price,
             availableQty: req.body[i].availableQty,
         })
-        await p.save()
+        await prod.save()
         }  
         res.status(200).json({ success: "success" })
     }
