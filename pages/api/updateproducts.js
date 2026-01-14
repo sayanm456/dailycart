@@ -1,14 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import User from "../../../models/User"
-import connectDb from "../../../middleware/db"
-var CryptoJS = require("crypto-js");
+import Product from "../../models/Product"
+import connectDb from "../../middleware/db"
 
 const handler = async (req, res)=>{
     if(req.method == 'POST'){
         console.log(req.body)
-        const { name, email } = req.body
-        let user = new User({name, email, password: CryptoJS.AES.encrypt(req.body.password, "secret234").toString()})
-        await user.save()
+        for(let i=0; i<req.body.length; i++){
+            
+        let p = await Product.findByIdAndUpdate(req.body[i]._id, req.body[i])
+        }  
         res.status(200).json({ success: "success" })
     }
     else{

@@ -1,5 +1,5 @@
-import Forgot from "../../../models/Forgot";
-import User from "../../../models/User";
+import Forgot from "../../models/Forgot";
+import User from "../../models/User";
 
 export default async function handler(req, res) {
     // Check if the user exist in the database

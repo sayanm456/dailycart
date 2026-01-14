@@ -54,7 +54,7 @@ const Signup = () => {
       draggable: true,
       progress: undefined,
       });
-
+     router.push('/login')
   }
   return (
     <div>
